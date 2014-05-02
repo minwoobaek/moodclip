@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.moodclip.main"
+    android:versionCode="1422108"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+   
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    <!--
+    <compatible-screens>
+    	<screen android:screenSize="normal"
+            	android:screenDensity="xhdpi" />
+    
+	</compatible-screens>
+    
+    <supports-screens 
+                  android:smallScreens="false"
+                  android:normalScreens="true"
+                  android:largeScreens="false"
+                  android:xlargeScreens="false"
+                  android:requiresSmallestWidthDp="360"
+                  android:compatibleWidthLimitDp="360"
+                  android:largestWidthLimitDp="360"/>
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.moodclip.main.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.moodclip.menu.setting.SettingActicity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.moodclip.video.YoutubePlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="org.moodclip.login.PreLoginActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.moodclip.login.ManualActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.moodclip.login.JoinActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.moodclip.login.LoginActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.moodclip.main.MainActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="org.moodclip.login.PreManualActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.moodclip.menu.setting.favorite.FavoriteActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.moodclip.menu.setting.PasswordChangeActivity"
+            android:label=""
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.moodclip.video.YoutubePlayerFullscreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="org.moodclip.video.comments.CommentsActivity"
+            android:label="@string/title_activity_comments" >
+        </activity>
+        <activity
+            android:name="org.moodclip.menu.setting.favorite.YoutubeAlonePlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="org.moodlcip.info.PlayerInfoActivity"
+            android:label="@string/title_activity_player_info" >
+        </activity>
+        <activity
+            android:name="org.moodclip.menu.setting.friends.FriendsActivity"
+            android:label="@string/title_activity_user_friends" >
+        </activity>
+        <activity
+            android:name="org.moodclip.menu.setting.friends.FriendsInviteActivity"
+            android:label="@string/title_activity_friends_invite" >
+        </activity>
+        <activity
+            android:name="org.moodclip.main.TutorialActivity2"
+            android:label="@string/title_activity_tutorial" >
+        </activity>
+        <activity
+            android:name="org.moodclip.main.TutorialActivity1"
+            android:label="@string/title_activity_tutorial_activity1" >
+        </activity>
+        <activity
+            android:name="org.moodclip.main.TutorialActivity3"
+            android:label="@string/title_activity_tutorial_activity3" >
+        </activity>
+        <activity
+            android:name="org.moodclip.main.VideoviewPlayerFullscreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_videoview_player_fullscreen" >
+        </activity>
+    </application>
+
+</manifest>

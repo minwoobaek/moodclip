@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/JoinEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="이메일" />
+
+                    <TextView
+                        android:id="@+id/JoinPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="비밀번호" />
+
+                    <TextView
+                        android:id="@+id/JoinName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:text="이름" />
+
+                    <TextView
+                        android:id="@+id/BirthDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        android:layout_gravity="center"
+                        android:text="생일" />
+                    <TextView
+                        android:id="@+id/JoinGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_gravity="center"
+                        android:text="성별" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/joinId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/joinPwd1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Password(6자리 이상)"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/joinName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="First name + Last name" />
+
+                    <DatePicker
+                        android:id="@+id/birthDayPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:calendarViewShown="false" />
+
+                    <RadioGroup
+                        android:id="@+id/Gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="남성 " />
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="여성 " />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/joinOkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+       			android:layout_marginTop="30px"
+                android:layout_gravity="center"
+                android:src="@drawable/join_btn_sel" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

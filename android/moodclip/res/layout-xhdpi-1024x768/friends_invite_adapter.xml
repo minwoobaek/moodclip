@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164px"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="104px"
+            android:layout_height="104px"
+            android:layout_marginLeft="114px"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="4" >
+
+                    <com.facebook.widget.ProfilePictureView
+                        android:id="@+id/friendsInvitePic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+           				android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        facebook:preset_size="normal" >
+                    </com.facebook.widget.ProfilePictureView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+           				android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_pic_cover_sel" />
+                </FrameLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/friendsInviteName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:textSize="6.5pt"
+            android:textStyle="bold"
+            android:textColor="#676566" />
+
+        <ImageView
+            android:id="@+id/friendsInviteBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="4"
+            android:layout_marginRight="116px"
+            android:src="@drawable/friends_invite_btn" />
+    </LinearLayout>
+
+</LinearLayout>

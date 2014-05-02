@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity" >
+
+    <ListView
+        android:id="@+id/CommentslistView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:listSelector="@drawable/friends_list_sel"
+    	android:cacheColorHint="#00000000" >
+    </ListView>
+
+</RelativeLayout>

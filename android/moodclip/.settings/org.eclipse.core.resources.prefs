@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/org/moodclip/login/JoinActivity.java=UTF-8
+encoding//src/org/moodclip/login/LoginActivity.java=UTF-8
+encoding//src/org/moodclip/main/MainActivity.java=UTF-8
+encoding//src/org/moodclip/menu/setting/PasswordChangeActivity.java=UTF-8
+encoding//src/org/moodclip/menu/setting/SettingActicity.java=UTF-8
+encoding//src/org/moodclip/menu/setting/favorite/FavoriteActivity.java=UTF-8
+encoding//src/org/moodclip/menu/setting/favorite/FavoriteListAdapter.java=UTF-8
+encoding//src/org/moodclip/menu/setting/favorite/YoutubeAlonePlayerActivity.java=UTF-8
+encoding//src/org/moodclip/video/YoutubeApi/YouTubeFailureRecoveryActivity.java=UTF-8
+encoding//src/org/moodclip/video/YoutubePlayerActivity.java=UTF-8
+encoding/<project>=UTF-8

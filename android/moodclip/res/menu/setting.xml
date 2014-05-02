@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <item
+        android:id="@+id/setting_main"
+        android:icon="@drawable/moodclip_logo"
+        android:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/setting_menu"
+        android:icon="@drawable/blank_menu"
+        android:showAsAction="always"/>
+
+</menu>

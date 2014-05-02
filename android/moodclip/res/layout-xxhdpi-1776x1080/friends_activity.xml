@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".FriendsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.42"
+            android:src="@drawable/friends_list_logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15.14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/friendsMemberLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/friendsMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/friends_member" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friendsInviteLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/friendsInvite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/friends_invite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friendsRumorLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/rumor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/friends_rumor" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" >
+
+        <ListView
+            android:id="@+id/friendslistView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    		android:listSelector="@drawable/friends_list_sel"
+    		android:cacheColorHint="#00000000" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/FriendsInviteListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    		android:listSelector="@drawable/friends_list_sel"
+    		android:cacheColorHint="#00000000" >
+        </ListView>
+        
+    </FrameLayout>
+
+</LinearLayout>
